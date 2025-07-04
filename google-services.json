@@ -7,6 +7,25 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:149226295865:android:9fecbbdb242c7bfeadf3e8",
+        "android_client_info": {
+          "package_name": "com.chatwoot.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbMUaeX2hsmUNa4L0uxLoyLppUI9HWtyg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:149226295865:android:afbaaf2aaab4bf3cadf3e8",
         "android_client_info": {
           "package_name": "iunconnect.app"
