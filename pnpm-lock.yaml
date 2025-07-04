@@ -101,7 +101,7 @@ importers:
         specifier: 5.0.0
         version: 5.0.0
       expo:
-        specifier: ~52.0.46
+        specifier: ~52.0.47
         version: 52.0.47(@babel/core@7.27.7)(@babel/preset-env@7.27.2(@babel/core@7.27.7))(@expo/metro-runtime@4.0.1(react-native@0.76.9(@babel/core@7.27.7)(@babel/preset-env@7.27.2(@babel/core@7.27.7))(@types/react@18.3.23)(react@18.3.1)))(react-native-webview@13.15.0(react-native@0.76.9(@babel/core@7.27.7)(@babel/preset-env@7.27.2(@babel/core@7.27.7))(@types/react@18.3.23)(react@18.3.1))(react@18.3.1))(react-native@0.76.9(@babel/core@7.27.7)(@babel/preset-env@7.27.2(@babel/core@7.27.7))(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)
       expo-application:
         specifier: ~6.0.2

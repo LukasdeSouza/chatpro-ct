@@ -30,7 +30,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
         ITSAppUsesNonExemptEncryption: false,
       },
       // Please use the relative path to the google-services.json file
-      googleServicesFile: process.env.EXPO_PUBLIC_IOS_GOOGLE_SERVICES_FILE,
+      googleServicesFile: './google-services.json',
       entitlements: { 'aps-environment': 'production' },
       associatedDomains: ['applinks:app.chatwoot.com'],
     },
@@ -45,7 +45,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
         'android.permission.READ_MEDIA_IMAGES',
       ],
       // Please use the relative path to the google-services.json file
-      googleServicesFile: process.env.EXPO_PUBLIC_ANDROID_GOOGLE_SERVICES_FILE,
+      googleServicesFile: './google-services.json',
       intentFilters: [
         {
           action: 'VIEW',
