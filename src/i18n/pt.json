@@ -22,8 +22,8 @@
     "ERROR": "URL de instalação inválido"
   },
   "LOGIN": {
-    "TITLE": "Log in to your account",
-    "DESCRIPTION": "You are connected to {{baseUrl}}.",
+    "TITLE": "Entre com seu Usuário",
+    "DESCRIPTION": "Você está conectado ao {{baseUrl}}.",
     "EMAIL": "e-mail",
     "PASSWORD": "Palavra-passe",
     "EMAIL_REQUIRED": "E-mail é necessário",
@@ -36,7 +36,7 @@
     "RESET_HERE": "Redefinir aqui",
     "NO_ACCOUNT": "Não tem uma conta?",
     "CREATE_ACCOUNT": "Criar nova conta",
-    "SETTINGS": "Confirgurações",
+    "SETTINGS": "Configurações",
     "CHANGE_LANGUAGE": "Alterar idioma",
     "TERMS": "Termos & Condições",
     "CHANGE_URL": "Mudar URL"
@@ -48,7 +48,7 @@
     "HEADER_TITLE": "Redefinir senha",
     "TITLE": "Esqueceu-se da sua senha?",
     "SUB_TITLE": "Don't worry! We got your back",
-    "API_SUCCESS": "Password reset link has been sent to your email address"
+    "API_SUCCESS": "Link de resetar senha foi enviado para o seu endereço de email"
   },
   "CONVERSATION": {
     "HEADER": {

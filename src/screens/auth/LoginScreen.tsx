@@ -110,8 +110,8 @@ const LoginScreen = () => {
           showsVerticalScrollIndicator={false}
           contentContainerStyle={tailwind.style('px-6 pt-24')}>
           <Image
-            source={require('@/assets/images/logo.png')}
-            style={tailwind.style('w-10 h-10')}
+            source={require('@/assets/images/iuconnect.jpg')}
+            style={tailwind.style('w-15 h-15 rounded-2xl' )}
             resizeMode="contain"
           />
           <View style={tailwind.style('pt-6 gap-4')}>
@@ -211,12 +211,13 @@ const LoginScreen = () => {
           />
 
           <Pressable style={tailwind.style('pt-1 mb-8')} onPress={openResetPassword}>
-            <Animated.Text style={tailwind.style('text-blue-800 font-inter-medium-24 text-right')}>
+            <Animated.Text style={tailwind.style('text-teal-800 font-inter-medium-24 text-right')}>
               {i18n.t('LOGIN.FORGOT_PASSWORD')}
             </Animated.Text>
           </Pressable>
 
           <Button
+            color={""}
             text={isLoggingIn ? i18n.t('LOGIN.LOGIN_LOADING') : i18n.t('LOGIN.LOGIN')}
             handlePress={handleSubmit(onSubmit)}
           />

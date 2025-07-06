@@ -22,7 +22,7 @@
     "ERROR": "Invalid installation url"
   },
   "LOGIN": {
-    "TITLE": "Log in to your account",
+    "TITLE": "Login to your account",
     "DESCRIPTION": "You are connected to {{baseUrl}}.",
     "EMAIL": "Email",
     "PASSWORD": "Password",
