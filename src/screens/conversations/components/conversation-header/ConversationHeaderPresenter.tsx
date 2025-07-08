@@ -42,7 +42,7 @@ const HeaderTitle = () => (
   <Animated.View style={tailwind.style('flex-1')}>
     <Text
       style={tailwind.style(
-        'text-[17px] font-inter-medium-24 tracking-[0.32px] leading-[17px] text-center text-gray-950',
+        'text-[17px] font-inter-medium-24 tracking-[0.32px] leading-[17px] text-center text-slate-200',
       )}>
       {i18n.t('CONVERSATION.HEADER.TITLE')}
     </Text>
@@ -153,7 +153,7 @@ export const ConversationHeaderPresenter = ({
 
   return (
     <Animated.View
-      style={[tailwind.style('flex flex-row justify-between items-center px-4 pt-2 pb-[12px]')]}>
+      style={[tailwind.style('flex flex-row justify-between items-center px-4 pt-2 pb-[12px] bg-[#6540d9]')]}>
       <LeftSection
         currentState={currentState}
         isSelectedAll={isSelectedAll}
