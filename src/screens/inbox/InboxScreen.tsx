@@ -26,7 +26,7 @@ import { resetNotifications } from '@/store/notification/notificationSlice';
 import { showToast } from '@/utils/toastUtils';
 import i18n from '@/i18n';
 import { selectSortOrder } from '@/store/notification/notificationFilterSlice';
-import { EmptyStateIcon } from '@/svg-icons';
+import { IuConnect } from '@/svg-icons';
 import { InboxSortTypes } from '@/store/notification/notificationTypes';
 
 const AnimatedFlashlist = Animated.createAnimatedComponent(FlashList<Notification>);
@@ -147,7 +147,7 @@ const InboxList = () => {
         'flex-1 items-center justify-center',
         `pb-[${TAB_BAR_HEIGHT}px]`,
       )}>
-      <EmptyStateIcon />
+      <IuConnect />
       <Animated.Text style={tailwind.style('pt-6 text-md  tracking-[0.32px] text-gray-800')}>
         {i18n.t('NOTIFICATION.EMPTY')}
       </Animated.Text>

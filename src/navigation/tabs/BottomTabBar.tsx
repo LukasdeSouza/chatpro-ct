@@ -105,7 +105,9 @@ const TabItem = (props: any) => {
         accessibilityLabel={options.tabBarAccessibilityLabel}
         testID={options.tabBarTestID}
         onPress={onPress}
-        onLongPress={onLongPress}>
+        onLongPress={onLongPress}
+        style={tailwind.style('bg-slate-100 rounded-lg pt-2')}
+        >
         <TabBarIcons focused={isFocused} route={route} />
       </Pressable>
     </Animated.View>

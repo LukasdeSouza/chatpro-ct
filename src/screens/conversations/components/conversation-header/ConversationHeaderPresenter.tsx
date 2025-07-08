@@ -122,7 +122,7 @@ const RightSection = ({
       <Pressable onPress={onRightIconPress} hitSlop={16}>
         {currentState === 'Filter' || currentState === 'Select' ? (
           <Animated.View exiting={exiting} entering={entering}>
-            <Icon size={24} icon={<CloseIcon />} />
+            <Icon size={24} icon={<CloseIcon />} stroke={"#eee"} />
           </Animated.View>
         ) : (
           <Animated.View exiting={exiting} entering={entering}>

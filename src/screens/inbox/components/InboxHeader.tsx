@@ -35,7 +35,7 @@ export const InboxHeader = (props: InboxHeaderProps) => {
         style={[tailwind.style('flex flex-row justify-between items-center px-4 pt-2 pb-[12px]')]}>
         <Animated.View style={tailwind.style('flex-1')}>
           <Pressable hitSlop={16} onPress={markAllAsRead}>
-            <Icon icon={<DoubleCheckIcon />} size={24} />
+            <Icon icon={<DoubleCheckIcon stroke={"#eee"} />} size={24} />
           </Pressable>
         </Animated.View>
         <Animated.View style={tailwind.style('flex-1')}>
@@ -48,7 +48,7 @@ export const InboxHeader = (props: InboxHeaderProps) => {
         </Animated.View>
         <Animated.View style={tailwind.style('flex-1 items-end')}>
           <Pressable onPress={handleToggleState} hitSlop={16}>
-            <Icon icon={<InboxFilterIcon />} size={24} />
+            <Icon icon={<InboxFilterIcon stroke={"#eee"} />} size={24} />
           </Pressable>
         </Animated.View>
       </Animated.View>

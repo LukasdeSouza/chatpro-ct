@@ -21,7 +21,7 @@ import {
 
 import { ActionTabs, BottomSheetBackdrop, BottomSheetWrapper } from '@/components-next';
 
-import { EmptyStateIcon } from '@/svg-icons';
+import { IuConnect } from '@/svg-icons';
 import {
   SCREENS,
   TAB_BAR_HEIGHT,
@@ -243,7 +243,7 @@ const ConversationList = () => {
         'flex-1 items-center justify-center',
         `pb-[${TAB_BAR_HEIGHT}px]`,
       )}>
-      <EmptyStateIcon />
+      <IuConnect />
       <Animated.Text style={tailwind.style('pt-6 text-md  tracking-[0.32px] text-gray-800')}>
         {i18n.t('CONVERSATION.EMPTY')}
       </Animated.Text>
