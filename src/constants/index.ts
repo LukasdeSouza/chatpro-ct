@@ -38,23 +38,23 @@ export const MAXIMUM_FILE_UPLOAD_SIZE = 20;
 export const CONVERSATION_STATUSES = [
   {
     key: 'open',
-    name: 'Open',
+    name: 'Aberto',
   },
   {
     key: 'resolved',
-    name: 'Resolved',
+    name: 'Resolvido',
   },
   {
     key: 'pending',
-    name: 'Pending',
+    name: 'Pendente',
   },
   {
     key: 'snoozed',
-    name: 'Snoozed',
+    name: 'Adiar',
   },
   {
     key: 'all',
-    name: 'All',
+    name: 'Todas',
   },
 ];
 export const SORT_TYPES = [

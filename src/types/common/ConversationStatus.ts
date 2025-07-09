@@ -16,10 +16,10 @@ export const AssigneeOptions: Record<AssigneeTypes, string> = {
 
 export const StatusOptions: Record<AllStatusTypes, string> = {
   all: 'All',
-  open: 'Open',
-  resolved: 'Resolved',
-  pending: 'Pending',
-  snoozed: 'Snoozed',
+  open: 'Aberto',
+  resolved: 'Resolvido',
+  pending: 'Pendente',
+  snoozed: 'Adiar',
 };
 
 export const SortOptions: Record<SortTypes, string> = {
