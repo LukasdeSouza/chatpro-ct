@@ -137,7 +137,7 @@ export const Avatar: React.FC<Partial<AvatarProps>> = props => {
               cx(
                 avatarTheme.initials.base,
                 avatarTheme.initials.size[size],
-                'font-inter-medium-24',
+                'font-inter-medium-24'
               ),
             ),
           ]}

@@ -236,7 +236,7 @@
         "ASSIGN": "Atribuir"
       },
       "PRIORITY": {
-        "EMPTY": "Nenhuma prioridade adicionada",
+        "EMPTY": "Nenhuma prioridade",
         "EDIT": "Alterar"
       }
     }

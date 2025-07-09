@@ -68,11 +68,11 @@ const variantTextMap = {
 };
 
 const variantBaseMap = {
-  [MESSAGE_VARIANTS.AGENT]: 'bg-gray-100',
+  [MESSAGE_VARIANTS.AGENT]: 'bg-slate-200',
   [MESSAGE_VARIANTS.PRIVATE]: 'bg-amber-100',
-  [MESSAGE_VARIANTS.USER]: 'bg-blue-700',
-  [MESSAGE_VARIANTS.BOT]: 'bg-blue-100',
-  [MESSAGE_VARIANTS.TEMPLATE]: 'bg-blue-100',
+  [MESSAGE_VARIANTS.USER]: 'bg-teal-600',
+  [MESSAGE_VARIANTS.BOT]: 'bg-teal-100',
+  [MESSAGE_VARIANTS.TEMPLATE]: 'bg-teal-100',
   [MESSAGE_VARIANTS.ERROR]: 'bg-ruby-700',
   [MESSAGE_VARIANTS.EMAIL]: 'bg-gray-100',
   [MESSAGE_VARIANTS.UNSUPPORTED]: 'bg-amber-100 border border-dashed border-amber-700',
