@@ -68,9 +68,9 @@ const variantTextMap = {
 };
 
 const variantBaseMap = {
-  [MESSAGE_VARIANTS.AGENT]: 'bg-[#222375]',
+  [MESSAGE_VARIANTS.AGENT]: 'bg-teal-600',
   [MESSAGE_VARIANTS.PRIVATE]: 'bg-amber-100',
-  [MESSAGE_VARIANTS.USER]: 'bg-teal-600',
+  [MESSAGE_VARIANTS.USER]: 'bg-[#222375]',
   [MESSAGE_VARIANTS.BOT]: 'bg-teal-100',
   [MESSAGE_VARIANTS.TEMPLATE]: 'bg-teal-100',
   [MESSAGE_VARIANTS.ERROR]: 'bg-ruby-700',
