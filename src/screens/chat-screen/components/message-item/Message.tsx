@@ -60,7 +60,7 @@ type MessageWrapperProps = {
 };
 
 const variantTextMap = {
-  [MESSAGE_VARIANTS.AGENT]: 'text-gray-700',
+  [MESSAGE_VARIANTS.AGENT]: 'text-slate-300',
   [MESSAGE_VARIANTS.USER]: 'text-white',
   [MESSAGE_VARIANTS.BOT]: 'text-gray-700',
   [MESSAGE_VARIANTS.TEMPLATE]: 'text-gray-700',
