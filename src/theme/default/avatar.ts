@@ -24,7 +24,7 @@ export const avatarTheme = {
       '4xl': { borderRadius: 12 },
     },
   },
-  circular: 'rounded-full',
+  circular: 'rounded-lg',
   // SVG Icon Scaling with respect to Container Width
   defaultUserIcon: {
     xs: 'w-2.5',

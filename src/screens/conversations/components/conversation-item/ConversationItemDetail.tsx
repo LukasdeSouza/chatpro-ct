@@ -152,6 +152,7 @@ export const ConversationItemDetail = memo((props: ConversationDetailSubCellProp
                 <Avatar
                   size="sm"
                   name={assignee.name as string}
+                  squared={true}
                   src={{ uri: assignee.thumbnail } as ImageURISource}
                 />
               </AnimatedNativeView>

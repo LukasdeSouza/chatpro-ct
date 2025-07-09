@@ -146,7 +146,7 @@ export const Avatar: React.FC<Partial<AvatarProps>> = props => {
           {getInitials(name, size)}
         </Text>
       ) : null}
-      {status && <AvatarStatus parentsBackground={parentsBackground} size={size} status={status} />}
+     {status && <AvatarStatus parentsBackground={parentsBackground} size={size} status={status} />}
     </View>
   );
 };

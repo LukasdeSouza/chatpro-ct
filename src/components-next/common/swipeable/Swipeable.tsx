@@ -121,8 +121,8 @@ export const Swipeable = forwardRef((props: SwipeableProps, _ref) => {
     spacing,
     triggerOverswipeOnFlick = false,
     noOfPointers = 1,
-    leftElementBgColor = 'bg-blue-800',
-    rightElementBgColor = 'bg-green-800',
+    leftElementBgColor = 'bg-[#6540d9]',
+    rightElementBgColor = 'bg-teal-600',
   } = props;
 
   const hapticWarning = useHaptic('success');
