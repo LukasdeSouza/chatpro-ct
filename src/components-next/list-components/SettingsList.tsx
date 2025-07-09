@@ -31,7 +31,8 @@ const ListItem = (props: ListItemProps) => {
           index === 0 ? 'rounded-t-[13px]' : '',
           isLastItem ? 'rounded-b-[13px]' : '',
         ),
-      ]}>
+      ]}
+    >
       <Animated.View style={tailwind.style('flex flex-row items-center pl-3')}>
         {listItem.icon ? (
           <Animated.View>
@@ -43,12 +44,14 @@ const ListItem = (props: ListItemProps) => {
             'flex-1 flex-row items-center justify-between py-[11px]',
             listItem.icon ? 'ml-3' : '',
             !isLastItem ? 'border-b-[1px] border-b-blackA-A3' : '',
-          )}>
+          )}
+        >
           <Animated.View>
             <Animated.Text
               style={tailwind.style(
                 'text-base font-inter-420-20 leading-[22px] tracking-[0.16px] text-gray-950',
-              )}>
+              )}
+            >
               {listItem.title}
             </Animated.Text>
           </Animated.View>
@@ -57,7 +60,8 @@ const ListItem = (props: ListItemProps) => {
               style={tailwind.style(
                 'text-base font-inter-normal-20 leading-[22px] tracking-[0.16px]',
                 listItem.subtitleType === 'light' ? 'text-gray-900' : 'text-gray-950',
-              )}>
+              )}
+            >
               {listItem.subtitle}
             </Animated.Text>
             {listItem.hasChevron ? <Icon icon={<CaretRight />} size={20} /> : null}
@@ -78,7 +82,8 @@ export const SettingsList = (props: GenericListProps) => {
           <Animated.Text
             style={tailwind.style(
               'text-sm font-inter-medium-24 leading-[16px] tracking-[0.32px] text-gray-700',
-            )}>
+            )}
+          >
             {sectionTitle}
           </Animated.Text>
         </Animated.View>

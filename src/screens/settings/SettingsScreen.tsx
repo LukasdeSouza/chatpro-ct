@@ -229,14 +229,15 @@ const SettingsScreen = () => {
       onPressListItem: () => notificationPreferencesSheetRef.current?.present(),
       // onPressListItem: openSystemSettings,
     },
-    {
-      hasChevron: true,
-      title: i18n.t('SETTINGS.CHANGE_LANGUAGE'),
-      icon: <TranslateIcon />,
-      subtitle: LANGUAGES[activeLocale as keyof typeof LANGUAGES],
-      subtitleType: 'light',
-      onPressListItem: () => languagesModalSheetRef.current?.present(),
-    },
+    // Comentado: Opção de alterar idioma removida - idioma fixo em pt_BR
+    // {
+    //   hasChevron: true,
+    //   title: i18n.t('SETTINGS.CHANGE_LANGUAGE'),
+    //   icon: <TranslateIcon />,
+    //   subtitle: LANGUAGES[activeLocale as keyof typeof LANGUAGES],
+    //   subtitleType: 'light',
+    //   onPressListItem: () => languagesModalSheetRef.current?.present(),
+    // },
     {
       hasChevron: enableAccountSwitch,
       title: i18n.t('SETTINGS.SWITCH_ACCOUNT'),
@@ -251,7 +252,8 @@ const SettingsScreen = () => {
     },
   ];
 
-  const supportList: GenericListType[] = [
+  {
+    /*const supportList: GenericListType[] = [
     {
       hasChevron: true,
       title: i18n.t('SETTINGS.READ_DOCS'),
@@ -268,7 +270,8 @@ const SettingsScreen = () => {
       subtitleType: 'light',
       onPressListItem: () => toggleWidget(true),
     },
-  ];
+  ]; */
+  }
 
   return (
     <SafeAreaView style={tailwind.style('flex-1 bg-white font-inter-normal-20')}>
@@ -304,9 +307,9 @@ const SettingsScreen = () => {
         <Animated.View style={tailwind.style('pt-6')}>
           <SettingsList sectionTitle={i18n.t('SETTINGS.PREFERENCES')} list={preferencesList} />
         </Animated.View>
-        <Animated.View style={tailwind.style('pt-6')}>
+        {/* <Animated.View style={tailwind.style('pt-6')}>
           <SettingsList sectionTitle={i18n.t('SETTINGS.SUPPORT')} list={supportList} />
-        </Animated.View>
+        </Animated.View> */}
         <Animated.View style={tailwind.style('pt-6 mx-4')}>
           <Button
             variant="secondary"
@@ -315,13 +318,13 @@ const SettingsScreen = () => {
             handlePress={onClickLogout}
           />
         </Animated.View>
-        <Pressable
+        {/* <Pressable
           style={tailwind.style('p-4 items-center')}
           onLongPress={() => debugActionsSheetRef.current?.present()}>
           <Text style={tailwind.style('text-sm text-gray-700 ')}>
             {`${chatwootInstance} ${appVersionDetails}`}
           </Text>
-        </Pressable>
+        </Pressable> */}
       </Animated.ScrollView>
       <BottomSheetModal
         ref={userAvailabilityStatusSheetRef}
@@ -342,7 +345,8 @@ const SettingsScreen = () => {
           />
         </BottomSheetWrapper>
       </BottomSheetModal>
-      <BottomSheetModal
+      {/* Comentado: Modal de seleção de idioma removido - idioma fixo em pt_BR */}
+      {/* <BottomSheetModal
         ref={languagesModalSheetRef}
         backdropComponent={BottomSheetBackdrop}
         handleIndicatorStyle={tailwind.style('overflow-hidden bg-blackA-A6 w-8 h-1 rounded-[11px]')}
@@ -357,7 +361,7 @@ const SettingsScreen = () => {
           <BottomSheetHeader headerText={i18n.t('SETTINGS.SET_LANGUAGE')} />
           <LanguageList onChangeLanguage={onChangeLanguage} currentLanguage={activeLocale} />
         </BottomSheetScrollView>
-      </BottomSheetModal>
+      </BottomSheetModal> */}
       <BottomSheetModal
         ref={notificationPreferencesSheetRef}
         backdropComponent={BottomSheetBackdrop}

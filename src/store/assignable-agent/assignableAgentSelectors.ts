@@ -26,7 +26,7 @@ export const selectAssignableAgentsByInboxId = createSelector(
     const agentsList = [
       {
         confirmed: true,
-        name: 'None',
+        name: 'Nenhum',
         id: 0,
         role: 'agent',
         accountId: 0,

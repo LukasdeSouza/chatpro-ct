@@ -451,7 +451,8 @@ export const Swipeable = forwardRef((props: SwipeableProps, _ref) => {
           StyleSheet.absoluteFillObject,
           tailwind.style('flex justify-center items-start', leftElementBgColor),
           leftStyle,
-        ]}>
+        ]}
+      >
         <AnimatedNativeView style={[tailwind.style(`pl-[${spacing}px]`), leftTranslation]}>
           {leftElement}
         </AnimatedNativeView>
@@ -462,7 +463,8 @@ export const Swipeable = forwardRef((props: SwipeableProps, _ref) => {
           StyleSheet.absoluteFillObject,
           tailwind.style('flex justify-center items-end', rightElementBgColor),
           rightStyle,
-        ]}>
+        ]}
+      >
         <AnimatedNativeView style={[tailwind.style(`pr-[${spacing}px]`), rightTranslation]}>
           {rightElement}
         </AnimatedNativeView>
@@ -478,7 +480,8 @@ export const Swipeable = forwardRef((props: SwipeableProps, _ref) => {
               : FadeIn
           }
           layout={LinearTransition.springify().damping(28).stiffness(200)}
-          style={[tailwind.style('flex-1 z-10', `w-[${WIDTH}px]`), overlayStyle, tappedCellStyle]}>
+          style={[tailwind.style('flex-1 z-10', `w-[${WIDTH}px]`), overlayStyle, tappedCellStyle]}
+        >
           {children}
         </AnimatedNativeView>
       </GestureDetector>

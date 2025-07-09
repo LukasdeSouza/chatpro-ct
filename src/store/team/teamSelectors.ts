@@ -14,7 +14,7 @@ export const filterTeams = createSelector(
     const teamsList = [
       {
         id: '0',
-        name: 'None',
+        name: 'Nenhuma',
         description: null,
         allowAutoAssign: false,
         accountId: 0,

@@ -107,7 +107,7 @@ export const ConversationLabelActions = (props: LabelSectionProps) => {
           style={tailwind.style(
             'text-sm font-inter-medium-24 leading-[16px] tracking-[0.32px] text-gray-700',
           )}>
-          Labels
+          Etiquetas
         </Animated.Text>
       </Animated.View>
       <Animated.View style={tailwind.style('flex flex-row flex-wrap pl-4')}>
@@ -128,7 +128,7 @@ export const ConversationLabelActions = (props: LabelSectionProps) => {
             style={tailwind.style(
               'text-md font-inter-medium-24 leading-[17px] tracking-[0.24px] pl-1.5 text-blue-800',
             )}>
-            Add
+            Adicionar
           </Animated.Text>
         </Pressable>
       </Animated.View>
@@ -147,7 +147,7 @@ export const ConversationLabelActions = (props: LabelSectionProps) => {
           isInsideBottomSheet
           onSubmitEditing={handleOnSubmitEditing}
           onChangeText={handleChangeText}
-          placeholder="Search labels"
+          placeholder="Procurar etiquetas"
           returnKeyLabel="done"
           returnKeyType="done"
         />

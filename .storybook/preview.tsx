@@ -22,7 +22,8 @@ const preview = {
             <View
               style={{
                 flex: 1,
-              }}>
+              }}
+            >
               <Story />
             </View>
           </RefsProvider>

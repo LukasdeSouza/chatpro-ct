@@ -15,7 +15,7 @@ import { ConversationStatus } from '@/types';
 
 import { ConversationActionType } from '../ConversationActions';
 
-type ConversationStateType = 'open' | 'pending' | 'snooze' | 'resolve';
+type ConversationStateType = 'aberto' | 'pendente' | 'adiar' | 'resolver';
 
 type ConversationActionOptionsType = {
   backgroundActionColor: string;
@@ -35,7 +35,7 @@ const conversationActionOptions: ConversationActionOptionsType[] = [
     backgroundActionPressedColor: 'bg-gray-200',
     borderActionColor: 'bg-gray-700',
     actionIcon: <OpenIcon stroke={tailwind.color('text-gray-700') as string} />,
-    actionText: 'open',
+    actionText: 'aberto',
     actionStatus: 'open',
   },
   {
@@ -43,7 +43,7 @@ const conversationActionOptions: ConversationActionOptionsType[] = [
     backgroundActionPressedColor: 'bg-amber-200',
     borderActionColor: 'bg-amber-700',
     actionIcon: <PendingFilledIcon />,
-    actionText: 'pending',
+    actionText: 'pendente',
     actionStatus: 'pending',
   },
   {
@@ -51,7 +51,7 @@ const conversationActionOptions: ConversationActionOptionsType[] = [
     backgroundActionPressedColor: 'bg-indigo-200',
     borderActionColor: 'bg-indigo-700',
     actionIcon: <SnoozedFilledIcon />,
-    actionText: 'snooze',
+    actionText: 'adiar',
     actionStatus: 'snoozed',
   },
   {
@@ -59,7 +59,7 @@ const conversationActionOptions: ConversationActionOptionsType[] = [
     backgroundActionPressedColor: 'bg-green-200',
     borderActionColor: 'bg-green-700',
     actionIcon: <ResolvedFilledIcon />,
-    actionText: 'resolve',
+    actionText: 'resolver',
     actionStatus: 'resolved',
   },
 ];
@@ -112,7 +112,8 @@ const ConversationActionOption = (props: ConversationActionOptionProps) => {
       style={[
         tailwind.style('flex-1', index !== conversationActionOptions.length - 1 ? 'mr-3' : ''),
         animatedStyle,
-      ]}>
+      ]}
+    >
       <Pressable
         key={index}
         style={({ pressed }) => [
@@ -124,7 +125,8 @@ const ConversationActionOption = (props: ConversationActionOptionProps) => {
           ),
         ]}
         onPress={handleActionOptionPress}
-        {...handlers}>
+        {...handlers}
+      >
         <Animated.View
           style={[
             tailwind.style('absolute inset-0 border-2 rounded-xl'),
@@ -135,7 +137,8 @@ const ConversationActionOption = (props: ConversationActionOptionProps) => {
         <Animated.Text
           style={tailwind.style(
             'text-md font-inter-normal-20 leading-[17px] tracking-[0.32px] text-center pt-5 capitalize text-gray-950 ',
-          )}>
+          )}
+        >
           {conversationAction.actionText}
         </Animated.Text>
       </Pressable>

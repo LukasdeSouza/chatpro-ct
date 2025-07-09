@@ -124,7 +124,8 @@ const MessageWrapper = ({
           !shouldGroupWithPrevious && !shouldGroupWithNext ? 'mb-2' : 'mb-1',
           item.private ? 'my-1' : '',
         ),
-      ]}>
+      ]}
+    >
       <Animated.View style={tailwind.style('flex flex-row')}>
         {!shouldGroupWithPrevious && shouldShowAvatar ? (
           <Animated.View style={tailwind.style('flex items-end justify-end mr-1')}>
@@ -155,18 +156,21 @@ const MessageWrapper = ({
                     : 'rounded-br-none'
                   : '',
               ),
-            ]}>
+            ]}
+          >
             {children}
             {!shouldGroupWithPrevious && (
               <Animated.View
                 style={tailwind.style(
                   'h-[21px] pt-[5px] pb-0.5 flex flex-row items-center justify-end',
-                )}>
+                )}
+              >
                 <Animated.Text
                   style={tailwind.style(
                     'text-xs font-inter-420-20 tracking-[0.32px] pr-1',
                     variantTextMap[variant],
-                  )}>
+                  )}
+                >
                   {unixTimestampToReadableTime(item.createdAt)}
                 </Animated.Text>
                 <DeliveryStatus
@@ -398,7 +402,8 @@ export const MessageComponent = (props: MessageComponentProps) => {
         avatarInfo={avatarInfo()}
         getMenuOptions={getMenuOptions}
         variant={variant()}
-        channel={channel}>
+        channel={channel}
+      >
         {messageContent}
       </MessageWrapper>
     );

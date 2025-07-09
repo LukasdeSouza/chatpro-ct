@@ -24,7 +24,7 @@
   "LOGIN": {
     "TITLE": "Acesse sua conta",
     "DESCRIPTION": "Você está conectado a {{baseUrl}}.",
-    "EMAIL": "e-mail",
+    "EMAIL": "E-mail",
     "PASSWORD": "Senha",
     "EMAIL_REQUIRED": "E-mail é obrigatório",
     "EMAIL_ERROR": "Digite um e-mail válido",
@@ -277,7 +277,7 @@
   },
   "NOTIFICATION": {
     "HEADER_TITLE": "Notificações",
-    "INBOX": "Caixa de Entrada",
+    "INBOX": "Canais",
     "EMPTY": "Ainda não há notificações.",
     "EMPTY_MORE_TEXT": "Quando você começar a receber notificações, elas aparecerão aqui.",
     "ALL_NOTIFICATION_LOADED": "Todas as notificações carregadas",
@@ -398,19 +398,19 @@
     "CHANGE_TEAMS": "Equipe da conversa mudou"
   },
   "ERRORS": {
-    "COMMON_ERROR": "Não foi possível conectar ao servidor Woot, por favor tente novamente mais tarde",
+    "COMMON_ERROR": "Não foi possível conectar ao servidor iuConnect, por favor tente novamente mais tarde",
     "OfFLINE": "Você precisa se conectar ao Wi-Fi ou a uma rede celular para ficar online novamente",
     "CANNOT_FETCH": "Ocorreu um erro ao buscar as informações, por favor, tente novamente",
     "AUTH": "Nome de usuário / senha incorreta. Por favor, tente novamente",
-    "NO_ACCOUNTS_MESSAGE": "Você não tem acesso a nenhuma conta no chatwoot"
+    "NO_ACCOUNTS_MESSAGE": "Você não tem acesso a nenhuma conta no iuConnect"
   },
   "SUCCESS": {
     "AUTH": "Acesso bem sucedido"
   },
   "SERVER_UPGRADE": {
     "TITLE": "Atualização do servidor necessária",
-    "WARNING_FOR_AGENT": "Parece que você está usando um servidor Chatwoot não suportado para o seu aplicativo móvel. Por favor, entre em contato com seu administrador para atualizar o servidor Chatwoot.",
-    "WARNING_FOR_ADMIN": "Parece que você está usando um servidor Chatwoot não suportado para o seu aplicativo móvel. Fazer o upgrade para a versão do servidor %{minimumVersion} ou posterior é necessário."
+    "WARNING_FOR_AGENT": "Parece que você está usando um servidor iuConnect não suportado para o seu aplicativo móvel. Por favor, entre em contato com seu administrador para atualizar o servidor iuConnect.",
+    "WARNING_FOR_ADMIN": "Parece que você está usando um servidor iuConnect não suportado para o seu aplicativo móvel. Fazer o upgrade para a versão do servidor %{minimumVersion} ou posterior é necessário."
   },
   "EXIT": {
     "TITLE": "Sair",

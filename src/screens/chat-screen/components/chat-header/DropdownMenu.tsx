@@ -125,7 +125,7 @@ export const ChatDropdownMenu = (props: PropsWithChildren<ChatDropdownMenuProps>
           enablePanDownToClose
           snapPoints={[dropdownMenuList.length * 44 + 4 + 37]}>
           <BottomSheetWrapper>
-            <BottomSheetHeader headerText="Select action" />
+            <BottomSheetHeader headerText="Selecionar ação" />
             <Animated.View style={tailwind.style('py-1 pl-3')}>
               {dropdownMenuList?.map((option, index) => {
                 const handleOnOptionSelect = () => {
