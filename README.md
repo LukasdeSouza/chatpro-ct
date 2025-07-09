@@ -35,10 +35,13 @@ Siga as instruções e garanta que o `projectId` foi criado no Expo.
 ### 1. Gere o Dev Client
 
 Para Android:
+
 ```bash
 pnpm eas build --profile development --platform android
 ```
+
 Para iOS (requer Mac com Xcode):
+
 ```bash
 pnpm eas build --profile development --platform ios
 ```
@@ -48,6 +51,7 @@ Isso irá gerar um arquivo `.apk` (ou `.ipa`) com todas as bibliotecas nativas i
 ### 2. Instale o app Dev Client no seu celular
 
 Após o build, você verá um link para baixar o `.apk`.
+
 - Instale no Android normalmente (pode usar QR Code ou baixar direto).
 - Esse app substitui o Expo Go: ele carrega seu app local ou publicado.
 
@@ -56,10 +60,13 @@ Após o build, você verá um link para baixar o `.apk`.
 ```bash
 pnpm start
 ```
+
 Ou:
+
 ```bash
 expo start --dev-client
 ```
+
 Isso abrirá o QR Code no terminal ou navegador.
 
 ### 4. Abra o Dev Client e escaneie o QR
@@ -69,11 +76,13 @@ Isso abrirá o QR Code no terminal ou navegador.
 - O app será carregado diretamente no seu celular 🎉
 
 #### ✅ Dica extra: usar tunnel se o celular não estiver na mesma rede
+
 No terminal, durante o `expo start`, pressione:
 
 ```
 p
 ```
+
 Depois selecione:
 
 ```
@@ -86,15 +95,12 @@ Isso garante que o celular acesse o servidor, mesmo se estiver em outra rede ou 
 
 ### 🧪 Recapitulando
 
-| Etapa | Descrição |
-|-------|---------------------------------------------------------------|
-| ✅ 1  | Gere o Dev Client com `eas build --profile development`        |
-| ✅ 2  | Instale o `.apk` no seu celular                               |
-| ✅ 3  | Rode o projeto com `pnpm start`                               |
-| ✅ 4  | Escaneie o QR com o Dev Client         
-
-
-
+| Etapa | Descrição                                               |
+| ----- | ------------------------------------------------------- |
+| ✅ 1  | Gere o Dev Client com `eas build --profile development` |
+| ✅ 2  | Instale o `.apk` no seu celular                         |
+| ✅ 3  | Rode o projeto com `pnpm start`                         |
+| ✅ 4  | Escaneie o QR com o Dev Client                          |
 
 <img src="https://user-images.githubusercontent.com/2246121/282256557-1570674b-d142-4198-9740-69404cc6a339.png#gh-light-mode-only" width="100%" alt="Chat dashboard dark mode"/>
 <img src="https://user-images.githubusercontent.com/2246121/282256632-87f6a01b-6467-4e0e-8a93-7bbf66d03a17.png#gh-dark-mode-only" width="100%" alt="Chat dashboard"/>
@@ -163,4 +169,4 @@ If you wish to contribute, please take a quick look at the [CONTRIBUTING.md](htt
 If there's anything you'd like to chat about, please feel free to join our [Discord](https://discord.gg/cJXdrwS) chat!
 
 _Chatwoot_ &copy; 2017-2025, Chatwoot Inc - Released under the MIT License.
-                       |
+|

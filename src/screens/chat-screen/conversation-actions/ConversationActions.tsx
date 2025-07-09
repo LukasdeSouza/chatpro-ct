@@ -152,9 +152,9 @@ export const ConversationActions = () => {
         <Animated.View style={tailwind.style('pt-10')}>
           {conversation && <ConversationMetaInformation conversation={conversation} />}
         </Animated.View>
-        <Animated.View style={tailwind.style('px-4 pt-10')}>
+        {/* <Animated.View style={tailwind.style('px-4 pt-10')}>
           <Button variant="secondary" handlePress={onShareConversation} text="Share conversation" />
-        </Animated.View>
+        </Animated.View> */}
       </ScrollView>
       <BottomSheetModal
         ref={updateParticipantSheetRef}

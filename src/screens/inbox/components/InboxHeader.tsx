@@ -32,23 +32,25 @@ export const InboxHeader = (props: InboxHeaderProps) => {
   return (
     <Animated.View style={[tailwind.style('border-b-[1px] border-b-blackA-A3 bg-[#6540d9]')]}>
       <Animated.View
-        style={[tailwind.style('flex flex-row justify-between items-center px-4 pt-2 pb-[12px]')]}>
+        style={[tailwind.style('flex flex-row justify-between items-center px-4 pt-2 pb-[12px]')]}
+      >
         <Animated.View style={tailwind.style('flex-1')}>
           <Pressable hitSlop={16} onPress={markAllAsRead}>
-            <Icon icon={<DoubleCheckIcon stroke={"#eee"} />} size={24} />
+            <Icon icon={<DoubleCheckIcon stroke={'#eee'} />} size={24} />
           </Pressable>
         </Animated.View>
         <Animated.View style={tailwind.style('flex-1')}>
           <Animated.Text
             style={tailwind.style(
               'text-[17px] text-center leading-[17px] tracking-[0.32px] font-inter-medium-24 text-slate-200',
-            )}>
+            )}
+          >
             {i18n.t('NOTIFICATION.INBOX')}
           </Animated.Text>
         </Animated.View>
         <Animated.View style={tailwind.style('flex-1 items-end')}>
           <Pressable onPress={handleToggleState} hitSlop={16}>
-            <Icon icon={<InboxFilterIcon stroke={"#eee"} />} size={24} />
+            <Icon icon={<InboxFilterIcon stroke={'#eee'} />} size={24} />
           </Pressable>
         </Animated.View>
       </Animated.View>
@@ -60,7 +62,8 @@ export const InboxHeader = (props: InboxHeaderProps) => {
         style={tailwind.style('rounded-[26px] overflow-hidden')}
         animationConfigs={animationConfigs}
         enablePanDownToClose
-        snapPoints={[160]}>
+        snapPoints={[160]}
+      >
         <BottomSheetWrapper>
           <InboxFilters />
         </BottomSheetWrapper>

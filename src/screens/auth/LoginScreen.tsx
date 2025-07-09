@@ -111,19 +111,19 @@ const LoginScreen = () => {
           contentContainerStyle={tailwind.style('px-6 pt-24')}>
           <Image
             source={require('@/assets/images/iuconnect.jpg')}
-            style={tailwind.style('w-15 h-15 rounded-2xl' )}
+            style={tailwind.style('w-15 h-15 rounded-2xl')}
             resizeMode="contain"
           />
           <View style={tailwind.style('pt-6 gap-4')}>
             <Animated.Text style={tailwind.style('text-2xl text-gray-950 font-inter-semibold-20')}>
               {i18n.t('LOGIN.TITLE')}
             </Animated.Text>
-            <Animated.Text
+            {/*<Animated.Text
               style={tailwind.style(
                 'font-inter-normal-20 leading-[18px] tracking-[0.32px] text-gray-900',
               )}>
               {i18n.t('LOGIN.DESCRIPTION', { baseUrl })}
-            </Animated.Text>
+            </Animated.Text>*/}
           </View>
 
           <Controller
@@ -217,28 +217,31 @@ const LoginScreen = () => {
           </Pressable>
 
           <Button
-            color={""}
+            color={''}
             text={isLoggingIn ? i18n.t('LOGIN.LOGIN_LOADING') : i18n.t('LOGIN.LOGIN')}
             handlePress={handleSubmit(onSubmit)}
           />
 
-          <Pressable
+         {/* <Pressable
             style={tailwind.style('flex-row justify-center items-center mt-6')}
             onPress={openConfigInstallationURL}>
             <Animated.Text style={tailwind.style('text-sm text-gray-900')}>
               {i18n.t('LOGIN.CHANGE_URL')}
             </Animated.Text>
-          </Pressable>
-          <Pressable
+          </Pressable> */}
+          {/* Comentado: Opção de alterar idioma removida - idioma fixo em pt_BR */}
+          {/* <Pressable
             style={tailwind.style('flex-row justify-center items-center mt-4')}
-            onPress={() => languagesModalSheetRef.current?.present()}>
+            onPress={() => languagesModalSheetRef.current?.present()}
+          >
             <Animated.Text style={tailwind.style('text-sm text-gray-900')}>
               {i18n.t('LOGIN.CHANGE_LANGUAGE')}
             </Animated.Text>
-          </Pressable>
+          </Pressable> */}
         </Animated.ScrollView>
       </View>
-      <BottomSheetModal
+      {/* Comentado: Modal de seleção de idioma removido - idioma fixo em pt_BR */}
+      {/* <BottomSheetModal
         ref={languagesModalSheetRef}
         backdropComponent={BottomSheetBackdrop}
         handleIndicatorStyle={tailwind.style('overflow-hidden bg-blackA-A6 w-8 h-1 rounded-[11px]')}
@@ -247,12 +250,13 @@ const LoginScreen = () => {
         animationConfigs={animationConfigs}
         handleStyle={tailwind.style('p-0 h-4 pt-[5px]')}
         style={tailwind.style('rounded-[26px] overflow-hidden')}
-        snapPoints={['70%']}>
+        snapPoints={['70%']}
+      >
         <BottomSheetScrollView showsVerticalScrollIndicator={false}>
           <BottomSheetHeader headerText={i18n.t('SETTINGS.SET_LANGUAGE')} />
           <LanguageList onChangeLanguage={onChangeLanguage} currentLanguage={activeLocale} />
         </BottomSheetScrollView>
-      </BottomSheetModal>
+      </BottomSheetModal> */}
     </SafeAreaView>
   );
 };

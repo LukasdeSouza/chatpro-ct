@@ -48,7 +48,8 @@ const ForgotPassword = () => {
       <View style={tailwind.style('flex-1 bg-white')}>
         <Animated.ScrollView
           showsVerticalScrollIndicator={false}
-          contentContainerStyle={tailwind.style('px-6 pt-16')}>
+          contentContainerStyle={tailwind.style('px-6 pt-16')}
+        >
           <View style={tailwind.style('bg-teal-400 p-4 w-19 rounded-2xl')}>
             <Icon icon={<KeyRoundIcon />} size={40} />
           </View>
@@ -59,7 +60,8 @@ const ForgotPassword = () => {
             <Animated.Text
               style={tailwind.style(
                 'font-inter-normal-20 leading-[18px] tracking-[0.32px] text-gray-900',
-              )}>
+              )}
+            >
               {i18n.t('FORGOT_PASSWORD.SUB_TITLE')}
             </Animated.Text>
           </View>

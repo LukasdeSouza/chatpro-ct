@@ -61,24 +61,31 @@ export const NotificationPreferences = () => {
 
   return (
     <Animated.View style={tailwind.style('py-4 px-3')}>
-      {typedPushFlags.map((item: NotificationPreferenceType) => (
-        <Animated.View
-          key={item}
-          style={tailwind.style('flex flex-row items-center justify-between ml-2 mt-2')}>
-          <Animated.Text
-            style={tailwind.style('flex-1 leading-[17px] tracking-[0.24px] text-gray-950')}>
-            {i18n.t(`NOTIFICATION_PREFERENCE.${NOTIFICATION_PREFERENCE_TYPES[item]}`)}
-          </Animated.Text>
-          <Switch
-            trackColor={{ false: '#C9D7E3', true: '#1F93FF' }}
-            thumbColor="#FFFFFF"
-            style={styles.switch}
-            ios_backgroundColor="#C9D7E3"
-            onValueChange={() => onPushItemChange(item)}
-            value={selectedPushFlags.includes(item)}
-          />
-        </Animated.View>
-      ))}
+      {typedPushFlags
+        .filter(
+          (item: NotificationPreferenceType) =>
+            item !== 'push_sla_missed_first_response' &&
+            item !== 'push_sla_missed_next_response' &&
+            item !== 'push_sla_missed_resolution',
+        ) // Comentado: Opções SLA removidas - primeira resposta, próxima resposta e resolução
+        .map((item: NotificationPreferenceType) => (
+          <Animated.View
+            key={item}
+            style={tailwind.style('flex flex-row items-center justify-between ml-2 mt-2')}>
+            <Animated.Text
+              style={tailwind.style('flex-1 leading-[17px] tracking-[0.24px] text-gray-950')}>
+              {i18n.t(`NOTIFICATION_PREFERENCE.${NOTIFICATION_PREFERENCE_TYPES[item]}`)}
+            </Animated.Text>
+            <Switch
+              trackColor={{ false: '#C9D7E3', true: '#1F93FF' }}
+              thumbColor="#FFFFFF"
+              style={styles.switch}
+              ios_backgroundColor="#C9D7E3"
+              onValueChange={() => onPushItemChange(item)}
+              value={selectedPushFlags.includes(item)}
+            />
+          </Animated.View>
+        ))}
     </Animated.View>
   );
 };

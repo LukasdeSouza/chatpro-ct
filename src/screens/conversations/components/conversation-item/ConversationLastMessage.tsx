@@ -85,7 +85,8 @@ const MessageContent = ({
           numberOfLines={1}
           style={tailwind.style(
             'text-md flex-1 font-inter-420-20 tracking-[0.32px] leading-[21px] text-gray-900',
-          )}>
+          )}
+        >
           <MessageType message={message} style={tailwind.style('ml-1')} />
           {i18n.t(`CONVERSATION.ATTACHMENTS.image.CONTENT`)}
         </Text>
@@ -98,13 +99,15 @@ const MessageContent = ({
           numberOfLines={numberOfLines}
           style={tailwind.style(
             'text-md flex-1 font-inter-420-20 tracking-[0.3px] leading-[21px] text-gray-900',
-          )}>
+          )}
+        >
           <MessageType message={message} style={tailwind.style('ml-1')} />
           <Text
             numberOfLines={numberOfLines}
             style={tailwind.style(
               'text-md flex-1 font-inter-420-20 tracking-[0.3px] leading-[21px] text-gray-900',
-            )}>
+            )}
+          >
             {lastMessageContent}
           </Text>
         </Text>
@@ -119,7 +122,8 @@ const MessageContent = ({
           numberOfLines={1}
           style={tailwind.style(
             'text-md flex-1 font-inter-420-20 tracking-[0.32px] leading-[21px] text-gray-900',
-          )}>
+          )}
+        >
           {i18n.t(`CONVERSATION.ATTACHMENTS.${lastMessageFileType}.CONTENT`)}
         </Text>
       </NativeView>
@@ -129,7 +133,8 @@ const MessageContent = ({
     <Text
       style={tailwind.style(
         'text-md flex-1 font-inter-420-20 tracking-[0.32px] leading-[21px] text-gray-900',
-      )}>
+      )}
+    >
       {i18n.t('CONVERSATION.NO_CONTENT')}
     </Text>
   );

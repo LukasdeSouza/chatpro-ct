@@ -169,7 +169,8 @@ export const MessagesListContainer = () => {
   return (
     <PlatformSpecificKeyboardWrapperComponent
       style={tailwind.style('flex-1 bg-white')}
-      interpolator="linear">
+      interpolator="linear"
+    >
       <MessagesList
         messages={messagesWithGrouping}
         isFlashListReady={isFlashListReady}

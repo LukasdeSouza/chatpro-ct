@@ -11,7 +11,7 @@ import { AvailabilityStatus } from '@/types';
 type ConversationAvatarProps = {
   src: ImageURISource;
   name: string;
-  status: AvailabilityStatus; 
+  status: AvailabilityStatus;
 };
 
 const checkIfPropsAreSame = (prev: ConversationAvatarProps, next: ConversationAvatarProps) => {
@@ -25,7 +25,8 @@ export const ConversationAvatar = memo((props: ConversationAvatarProps) => {
   return (
     <AnimatedNativeView
       style={tailwind.style('')}
-      layout={LinearTransition.springify().damping(28).stiffness(200)}>
+      layout={LinearTransition.springify().damping(28).stiffness(200)}
+    >
       <Avatar size="4xl" {...{ src, name, status: status as AvatarStatusType }} />
     </AnimatedNativeView>
   );
