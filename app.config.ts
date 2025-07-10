@@ -2,11 +2,11 @@ import { ExpoConfig, ConfigContext } from 'expo/config';
 
 export default ({ config }: ConfigContext): ExpoConfig => {
   return {
-    name: 'IUNGO Chatwoot App',
+    name: 'IuConnect App',
     slug: process.env.EXPO_PUBLIC_APP_SLUG || 'chatwoot-mobile',
     version: '4.0.19',
     orientation: 'portrait',
-    icon: './assets/icon.png',
+    icon: './assets/logo_iuconnect_jpeg.jpeg',
     userInterfaceStyle: 'light',
     newArchEnabled: false,
     splash: {
@@ -35,7 +35,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       associatedDomains: ['applinks:app.chatwoot.com'],
     },
     android: {
-      adaptiveIcon: { foregroundImage: './assets/adaptive-icon.png', backgroundColor: '#ffffff' },
+      adaptiveIcon: { foregroundImage: './assets/logo_iuconnect_jpeg.jpeg', backgroundColor: '#ffffff' },
       package: 'com.chatwoot.app',
       permissions: [
         'android.permission.CAMERA',
