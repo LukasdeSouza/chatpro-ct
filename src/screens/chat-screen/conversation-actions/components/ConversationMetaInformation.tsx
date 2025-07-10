@@ -102,7 +102,17 @@ export const ConversationMetaInformation = ({ conversation }: { conversation: Co
     type: attribute.attributeDisplayType,
   }));
 
-  const allAttributes = [...otherConversationDetails, ...processedAttributes];
+  const allAttributes = [
+    ...otherConversationDetails.filter(
+      (item: AttributeListType) =>
+        item.title !== i18n.t('CONVERSATION_DETAILS.INITIATED_AT') &&
+        item.title !== i18n.t('CONVERSATION_DETAILS.INITIATED_FROM') &&
+        item.title !== i18n.t('CONVERSATION_DETAILS.BROWSER') &&
+        item.title !== i18n.t('CONVERSATION_DETAILS.OPERATING_SYSTEM') &&
+        item.title !== i18n.t('CONVERSATION_DETAILS.IP_ADDRESS'),
+    ),
+    ...processedAttributes,
+  ];
 
   const hasAnyAttributeContainingValue = allAttributes.some(attribute => attribute.subtitle);
 

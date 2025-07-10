@@ -23,7 +23,7 @@ const AttributeItem = (props: AttributeItemProps) => {
     if (formattedValue) {
       try {
         Clipboard.setString(formattedValue);
-        showToast({ message: `${listItem.title} copied to clipboard` });
+        showToast({ message: `${listItem.title} copiado para área de transferência` });
       } catch (error) {
         Sentry.captureException(error);
       }
