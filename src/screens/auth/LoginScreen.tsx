@@ -110,7 +110,7 @@ const LoginScreen = () => {
           showsVerticalScrollIndicator={false}
           contentContainerStyle={tailwind.style('px-6 pt-24')}>
           <Image
-            source={require('@/assets/images/iuconnect.jpg')}
+            source={require('@/assets/images/logo_iuconnect_jpeg.jpeg')}
             style={tailwind.style('w-15 h-15 rounded-2xl')}
             resizeMode="contain"
           />
