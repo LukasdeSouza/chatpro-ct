@@ -2,8 +2,8 @@ import { ExpoConfig, ConfigContext } from 'expo/config';
 
 export default ({ config }: ConfigContext): ExpoConfig => {
   return {
-    name: 'IUNGO Chatwoot App',
-    slug: process.env.EXPO_PUBLIC_APP_SLUG || 'chatwoot-mobile',
+    name: 'iuConnect App',
+    slug: process.env.EXPO_PUBLIC_APP_SLUG || 'iuConnect-mobile',
     version: '4.0.19',
     orientation: 'portrait',
     icon: './assets/icon.png',

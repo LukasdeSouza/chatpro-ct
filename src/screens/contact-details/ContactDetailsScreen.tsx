@@ -181,13 +181,13 @@ const ContactDetailsScreen = (props: ContactDetailsScreenProps) => {
     {
       icon: <LocationIcon />,
       subtitle: fullLocation || i18n.t('CONTACT_DETAILS.VALUE_UNAVAILABLE'),
-      title: 'Location',
+      title: 'Localização',
       subtitleType: 'dark',
     },
     {
       icon: <CallIcon />,
       subtitle: phoneNumber || i18n.t('CONTACT_DETAILS.VALUE_UNAVAILABLE'),
-      title: 'Phone',
+      title: 'Telefone',
       subtitleType: 'dark',
     },
     {
@@ -199,7 +199,7 @@ const ContactDetailsScreen = (props: ContactDetailsScreenProps) => {
     {
       icon: <CompanyIcon />,
       subtitle: companyName || i18n.t('CONTACT_DETAILS.VALUE_UNAVAILABLE'),
-      title: 'Company',
+      title: 'Empresa',
       subtitleType: 'dark',
     },
   ];
