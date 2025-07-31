@@ -2,16 +2,16 @@ import { ExpoConfig, ConfigContext } from 'expo/config';
 
 export default ({ config }: ConfigContext): ExpoConfig => {
   return {
-    name: 'IuConnect App',
-    slug: process.env.EXPO_PUBLIC_APP_SLUG || 'iuConnect-mobile',
+    name: 'ChatPro - Codetech',
+    slug: process.env.EXPO_PUBLIC_APP_SLUG || 'chatpro-codetech',
     version: '4.0.19',
     orientation: 'portrait',
-    icon: './assets/logo_iuconnect_jpeg.jpeg',
+    icon: './assets/images/LOGO_CODETECH.png',
     userInterfaceStyle: 'light',
     newArchEnabled: false,
 
     splash: {
-      image: './assets/logo_iuconnect_jpeg.jpeg',
+      image: './assets/LOGO_CODETECH.png',
       resizeMode: 'contain',
       backgroundColor: '#ffffff',
       enableFullScreenImage_legacy: true,
@@ -43,7 +43,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       package: 'com.chatwoot.app',
       googleServicesFile: './google-services.json',
       adaptiveIcon: {
-        foregroundImage: './assets/logo_iuconnect_jpeg.jpeg',
+        foregroundImage: './assets/LOGO_CODETECH.png',
         backgroundColor: '#ffffff',
       },
       permissions: [

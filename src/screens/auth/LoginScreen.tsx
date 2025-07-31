@@ -109,21 +109,16 @@ const LoginScreen = () => {
         <Animated.ScrollView
           showsVerticalScrollIndicator={false}
           contentContainerStyle={tailwind.style('px-6 pt-24')}>
-          <Image
-            source={require('@/assets/images/logo_iuconnect_jpeg.jpeg')}
-            style={tailwind.style('w-15 h-15 rounded-2xl')}
-            resizeMode="contain"
-          />
           <View style={tailwind.style('pt-6 gap-4')}>
             <Animated.Text style={tailwind.style('text-2xl text-gray-950 font-inter-semibold-20')}>
               {i18n.t('LOGIN.TITLE')}
             </Animated.Text>
-            {/*<Animated.Text
+            <Animated.Text
               style={tailwind.style(
                 'font-inter-normal-20 leading-[18px] tracking-[0.32px] text-gray-900',
               )}>
               {i18n.t('LOGIN.DESCRIPTION', { baseUrl })}
-            </Animated.Text>*/}
+            </Animated.Text>
           </View>
 
           <Controller
@@ -211,13 +206,14 @@ const LoginScreen = () => {
           />
 
           <Pressable style={tailwind.style('pt-1 mb-8')} onPress={openResetPassword}>
-            <Animated.Text style={tailwind.style('text-teal-800 font-inter-medium-24 text-right')}>
+            <Animated.Text style={tailwind.style('text-orange-600 font-inter-medium-24 text-right')}>
               {i18n.t('LOGIN.FORGOT_PASSWORD')}
             </Animated.Text>
           </Pressable>
 
           <Button
             color={''}
+            style={tailwind.style('pt-1 mb-8 bg-orange-600 text-slate-200')}
             text={isLoggingIn ? i18n.t('LOGIN.LOGIN_LOADING') : i18n.t('LOGIN.LOGIN')}
             handlePress={handleSubmit(onSubmit)}
           />

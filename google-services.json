@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "149226295865",
-    "project_id": "chatwoot-app-6c767",
-    "storage_bucket": "chatwoot-app-6c767.firebasestorage.app"
+    "project_number": "932316389408",
+    "project_id": "chatwoot-codetech",
+    "storage_bucket": "chatwoot-codetech.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:149226295865:android:9fecbbdb242c7bfeadf3e8",
+        "mobilesdk_app_id": "1:932316389408:android:98719f50062301df8c9c45",
         "android_client_info": {
           "package_name": "com.chatwoot.app"
         }
@@ -15,26 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBbMUaeX2hsmUNa4L0uxLoyLppUI9HWtyg"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:149226295865:android:afbaaf2aaab4bf3cadf3e8",
-        "android_client_info": {
-          "package_name": "iunconnect.app"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBbMUaeX2hsmUNa4L0uxLoyLppUI9HWtyg"
+          "current_key": "AIzaSyBjG-P1g1Bo6vJx2bWBSe-ZTY0Ss_njiSE"
         }
       ],
       "services": {
